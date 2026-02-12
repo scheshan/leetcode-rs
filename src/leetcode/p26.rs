@@ -1,0 +1,22 @@
+struct Solution {}
+
+impl Solution {
+    pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+        let mut slow = 0;
+        let mut fast = 0;
+
+        while fast < nums.len() {
+            let n = nums[fast];
+            fast += 1;
+
+            while fast < nums.len() && nums[fast] == nums[fast - 1] {
+                fast += 1;
+            }
+
+            nums[slow] = n;
+            slow += 1;
+        }
+
+        slow as i32
+    }
+}
