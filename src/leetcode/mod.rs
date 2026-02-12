@@ -8,3 +8,4 @@ mod p26;
 mod p27;
 mod p28;
 mod p88;
+mod p125;
