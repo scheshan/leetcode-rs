@@ -3,3 +3,4 @@ mod arr2;
 mod stack;
 mod stack2;
 mod queue;
+mod heap;
