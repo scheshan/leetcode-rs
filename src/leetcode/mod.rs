@@ -32,6 +32,7 @@ mod p704;
 mod p744;
 mod p80;
 mod p88;
+mod p2840;
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {
